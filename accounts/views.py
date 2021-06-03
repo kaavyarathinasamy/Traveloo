@@ -87,8 +87,8 @@ def Passwordreset(request):
             # return redirect ("/password_reset/done/")
         # if request.method == 'POST':
         #     sub = forms.Subscribe(request.POST)
-            subject = 'Welcome to DataFlair'
-            message = 'Hope you are enjoying your Django Tutorials'
+            subject = 'PASSWORD RESET'
+            message = 'Reset your password using the bwlow link'
             recepient = email #str(sub['email'].value())
             send_mail(subject, 
                 message, EMAIL_HOST_USER, [recepient], fail_silently = False)
